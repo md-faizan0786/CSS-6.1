@@ -1,0 +1,38 @@
+.container {
+    height: 300px;
+    width: 600px;
+    background-color: pink;
+    display: grid;
+
+    /* 2 Grid Model */
+
+   
+    /* grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-columns: 100px 100px 100px 100px; */
+
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+    	/* row-gap: 10px;
+        column-gap: 30px; */
+        grid-gap: 10px 30px;
+
+        place-items: center;
+}
+
+.item {
+    height:50px;
+    width: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+   text-align: center;
+}
+
+.one {
+     /* grid-column-start: 1;
+     grid-column-end: 4;  */
+  
+    /* grid-column: 1/4;   */
+
+  justify-items: end;
+  justify-self: end;
+}
